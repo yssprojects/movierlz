@@ -5,8 +5,8 @@ import json
 app = Flask(__name__)
 #a = input("enter Your Url \n")
 #print("<------Getting Information---------->")
-@appi.route()
-def home:
+@app.route("/")
+def home():
 
     url = "https://4movierulz.lv/"
     res = requests.get(url).content
